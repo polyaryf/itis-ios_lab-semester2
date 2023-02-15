@@ -14,10 +14,10 @@ class LoginViewController: UIViewController {
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "Login"
         textField.textAlignment = .natural
-        textField.layer.borderColor = UIColor.systemGray.cgColor
+        textField.layer.borderColor = UIColor.systemBlue.cgColor
         textField.layer.borderWidth = 0.5
         textField.layer.cornerRadius = 5
-        textField.clipsToBounds = true
+        textField.clipsToBounds = false
         textField.setLeftPaddingPoints(10)
         return textField
     }()
@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
         var textField: UITextField = .init()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "Password"
-        textField.layer.borderColor = UIColor.systemGray.cgColor
+        textField.layer.borderColor = UIColor.systemBlue.cgColor
         textField.layer.borderWidth = 0.5
         textField.layer.cornerRadius = 5
         textField.clipsToBounds = true
@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
         var button: UIButton = .init()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Log in", for: .normal)
-        button.backgroundColor = .black
+        button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 5
         button.clipsToBounds = true
         return button
@@ -53,13 +53,11 @@ class LoginViewController: UIViewController {
     
     func showLoader() {
         view.backgroundColor = .systemGray
-        view.addSubview(activityIndicatorView)
         activityIndicatorView.startAnimating()
     }
 
     func hideLoader() {
         view.backgroundColor = .white
-        view.willRemoveSubview(activityIndicatorView)
         activityIndicatorView.stopAnimating()
     }
     
@@ -69,7 +67,7 @@ class LoginViewController: UIViewController {
             message: "Something went wrong: \(error)",
             preferredStyle: .alert
         )
-        alertController.addAction(.init(title: "OK", style: .cancel))
+        alertController.addAction(UIAlertAction(title: "OK", style: .cancel))
         present(alertController, animated: true)
     }
     

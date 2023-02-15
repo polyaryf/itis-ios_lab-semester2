@@ -28,9 +28,9 @@ class MockAuthorizationService: AuthorizationService {
         }
         
         _isAuthorized.value = true
-       
-            
     }
+    
+    func signOut() {}
 }
     
 

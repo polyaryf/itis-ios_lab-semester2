@@ -39,5 +39,8 @@ class AppCoordinator {
         window?.rootViewController = controller
     }
     
-    func showAppContent() {}
+    func showAppContent() {
+        let tabBarCoordinator = MainTabBarCoordinator()
+        window?.rootViewController = tabBarCoordinator.start()
+    }
 }

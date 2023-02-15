@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2950986F299D262100D28867 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950986E299D262100D28867 /* ProfileViewController.swift */; };
+		29509872299D28C100D28867 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29509871299D28C100D28867 /* CatalogViewController.swift */; };
+		29509874299D28FA00D28867 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29509873299D28FA00D28867 /* MainTabBarCoordinator.swift */; };
+		29509876299D2FB000D28867 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29509875299D2FB000D28867 /* DetailViewController.swift */; };
+		2950987A299D2FFA00D28867 /* CatalogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29509879299D2FFA00D28867 /* CatalogService.swift */; };
+		2950987C299D301C00D28867 /* MockCatalogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950987B299D301C00D28867 /* MockCatalogService.swift */; };
 		29D311732999212D00F57CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D311722999212D00F57CB0 /* AppDelegate.swift */; };
 		29D311752999212D00F57CB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D311742999212D00F57CB0 /* SceneDelegate.swift */; };
 		29D3117C2999212E00F57CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D3117B2999212E00F57CB0 /* Assets.xcassets */; };
@@ -21,6 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2950986E299D262100D28867 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		29509871299D28C100D28867 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		29509873299D28FA00D28867 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
+		29509875299D2FB000D28867 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		29509879299D2FFA00D28867 /* CatalogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogService.swift; sourceTree = "<group>"; };
+		2950987B299D301C00D28867 /* MockCatalogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCatalogService.swift; sourceTree = "<group>"; };
 		29D3116F2999212D00F57CB0 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D311722999212D00F57CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29D311742999212D00F57CB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +59,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2950986D299D260F00D28867 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2950986E299D262100D28867 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		29509870299D28AD00D28867 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				29509871299D28C100D28867 /* CatalogViewController.swift */,
+				29509875299D2FB000D28867 /* DetailViewController.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		29509877299D2FD500D28867 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				29D3118A2999240700F57CB0 /* AuthorizationService.swift */,
+				29D3118C2999249600F57CB0 /* MockAuthorizationService.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		29509878299D2FE700D28867 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				29509879299D2FFA00D28867 /* CatalogService.swift */,
+				2950987B299D301C00D28867 /* MockCatalogService.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
 		29D311662999212D00F57CB0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,8 +128,11 @@
 		29D311882999221400F57CB0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				29509870299D28AD00D28867 /* Catalog */,
+				2950986D299D260F00D28867 /* Profile */,
 				29D31190299A402000F57CB0 /* Login */,
 				29D31186299921A200F57CB0 /* AppCoordinator.swift */,
+				29509873299D28FA00D28867 /* MainTabBarCoordinator.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -90,8 +140,8 @@
 		29D31189299923E200F57CB0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				29D3118A2999240700F57CB0 /* AuthorizationService.swift */,
-				29D3118C2999249600F57CB0 /* MockAuthorizationService.swift */,
+				29509878299D2FE700D28867 /* Catalog */,
+				29509877299D2FD500D28867 /* Authorization */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -184,8 +234,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29509876299D2FB000D28867 /* DetailViewController.swift in Sources */,
 				29D31195299ABA9100F57CB0 /* GifExtension.swift in Sources */,
+				29509872299D28C100D28867 /* CatalogViewController.swift in Sources */,
 				29D3118F299A3C9400F57CB0 /* LoginViewController.swift in Sources */,
+				29509874299D28FA00D28867 /* MainTabBarCoordinator.swift in Sources */,
+				2950987A299D2FFA00D28867 /* CatalogService.swift in Sources */,
+				2950986F299D262100D28867 /* ProfileViewController.swift in Sources */,
 				29D31187299921A200F57CB0 /* AppCoordinator.swift in Sources */,
 				29D31192299A403100F57CB0 /* LoginPresenter.swift in Sources */,
 				29D311732999212D00F57CB0 /* AppDelegate.swift in Sources */,
@@ -193,6 +248,7 @@
 				29D311752999212D00F57CB0 /* SceneDelegate.swift in Sources */,
 				29D3118B2999240700F57CB0 /* AuthorizationService.swift in Sources */,
 				29D3118D2999249600F57CB0 /* MockAuthorizationService.swift in Sources */,
+				2950987C299D301C00D28867 /* MockCatalogService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

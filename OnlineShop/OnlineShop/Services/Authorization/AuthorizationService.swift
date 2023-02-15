@@ -16,5 +16,6 @@ enum AuthorizationError: Error {
 protocol AuthorizationService {
     var isAuthorized: AnyPublisher<Bool, Never> { get }
     func signIn(login: String, password: String) async throws
+    func signOut()
 }
 
