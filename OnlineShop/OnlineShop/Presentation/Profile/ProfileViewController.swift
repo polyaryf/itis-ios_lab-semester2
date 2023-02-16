@@ -18,7 +18,7 @@ class ProfileViewController: UIViewController {
         var label = UILabel.init()
         label.text = "Admin"
         label.textAlignment = .center
-        label.font = .systemFont(ofSize: 15)
+        label.font = .boldSystemFont(ofSize: 20)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -57,14 +57,14 @@ class ProfileViewController: UIViewController {
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            profilePhoto.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            profilePhoto.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
             profilePhoto.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            profilePhoto.widthAnchor.constraint(equalToConstant: 250),
+            profilePhoto.widthAnchor.constraint(equalToConstant: 280),
             profilePhoto.heightAnchor.constraint(equalToConstant: 250),
             loginLabel.topAnchor.constraint(equalTo: profilePhoto.bottomAnchor, constant: 10),
             loginLabel.leadingAnchor.constraint(equalTo: profilePhoto.leadingAnchor),
             loginLabel.trailingAnchor.constraint(equalTo: profilePhoto.trailingAnchor),
-            signOutButton.topAnchor.constraint(equalTo: loginLabel.bottomAnchor, constant: 350),
+            signOutButton.topAnchor.constraint(equalTo: loginLabel.bottomAnchor, constant: 300),
             signOutButton.leadingAnchor.constraint(equalTo: profilePhoto.leadingAnchor),
             signOutButton.trailingAnchor.constraint(equalTo: profilePhoto.trailingAnchor),
             

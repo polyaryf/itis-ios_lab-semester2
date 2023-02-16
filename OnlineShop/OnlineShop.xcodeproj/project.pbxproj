@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29110CC8299E33F40067B0B0 /* CatalogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29110CC7299E33F40067B0B0 /* CatalogPresenter.swift */; };
 		2950986F299D262100D28867 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950986E299D262100D28867 /* ProfileViewController.swift */; };
 		29509872299D28C100D28867 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29509871299D28C100D28867 /* CatalogViewController.swift */; };
 		29509874299D28FA00D28867 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29509873299D28FA00D28867 /* MainTabBarCoordinator.swift */; };
 		29509876299D2FB000D28867 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29509875299D2FB000D28867 /* DetailViewController.swift */; };
 		2950987A299D2FFA00D28867 /* CatalogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29509879299D2FFA00D28867 /* CatalogService.swift */; };
 		2950987C299D301C00D28867 /* MockCatalogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950987B299D301C00D28867 /* MockCatalogService.swift */; };
+		2963574E299E0D7C00850AD7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2963574D299E0D7C00850AD7 /* Product.swift */; };
 		29D311732999212D00F57CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D311722999212D00F57CB0 /* AppDelegate.swift */; };
 		29D311752999212D00F57CB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D311742999212D00F57CB0 /* SceneDelegate.swift */; };
 		29D3117C2999212E00F57CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D3117B2999212E00F57CB0 /* Assets.xcassets */; };
@@ -21,18 +23,18 @@
 		29D3118D2999249600F57CB0 /* MockAuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D3118C2999249600F57CB0 /* MockAuthorizationService.swift */; };
 		29D3118F299A3C9400F57CB0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D3118E299A3C9400F57CB0 /* LoginViewController.swift */; };
 		29D31192299A403100F57CB0 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D31191299A403100F57CB0 /* LoginPresenter.swift */; };
-		29D31195299ABA9100F57CB0 /* GifExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D31194299ABA9100F57CB0 /* GifExtension.swift */; };
-		29D31197299ABAC100F57CB0 /* hello.gif in Resources */ = {isa = PBXBuildFile; fileRef = 29D31196299ABAC100F57CB0 /* hello.gif */; };
 		29D3119A299ABBDD00F57CB0 /* TextFieldExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D31199299ABBDD00F57CB0 /* TextFieldExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29110CC7299E33F40067B0B0 /* CatalogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPresenter.swift; sourceTree = "<group>"; };
 		2950986E299D262100D28867 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		29509871299D28C100D28867 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 		29509873299D28FA00D28867 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
 		29509875299D2FB000D28867 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		29509879299D2FFA00D28867 /* CatalogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogService.swift; sourceTree = "<group>"; };
 		2950987B299D301C00D28867 /* MockCatalogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCatalogService.swift; sourceTree = "<group>"; };
+		2963574D299E0D7C00850AD7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		29D3116F2999212D00F57CB0 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D311722999212D00F57CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29D311742999212D00F57CB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,8 +45,6 @@
 		29D3118C2999249600F57CB0 /* MockAuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthorizationService.swift; sourceTree = "<group>"; };
 		29D3118E299A3C9400F57CB0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		29D31191299A403100F57CB0 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		29D31194299ABA9100F57CB0 /* GifExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifExtension.swift; sourceTree = "<group>"; };
-		29D31196299ABAC100F57CB0 /* hello.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hello.gif; sourceTree = "<group>"; };
 		29D31199299ABBDD00F57CB0 /* TextFieldExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +72,7 @@
 			children = (
 				29509871299D28C100D28867 /* CatalogViewController.swift */,
 				29509875299D2FB000D28867 /* DetailViewController.swift */,
+				29110CC7299E33F40067B0B0 /* CatalogPresenter.swift */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";
@@ -94,6 +95,14 @@
 			path = Catalog;
 			sourceTree = "<group>";
 		};
+		2963574C299E0D6E00850AD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2963574D299E0D7C00850AD7 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		29D311662999212D00F57CB0 = {
 			isa = PBXGroup;
 			children = (
@@ -113,13 +122,13 @@
 		29D311712999212D00F57CB0 /* OnlineShop */ = {
 			isa = PBXGroup;
 			children = (
+				2963574C299E0D6E00850AD7 /* Model */,
 				29D31193299ABA6F00F57CB0 /* Extensions */,
 				29D31189299923E200F57CB0 /* Services */,
 				29D311882999221400F57CB0 /* Presentation */,
 				29D311722999212D00F57CB0 /* AppDelegate.swift */,
 				29D311742999212D00F57CB0 /* SceneDelegate.swift */,
 				29D3117B2999212E00F57CB0 /* Assets.xcassets */,
-				29D31196299ABAC100F57CB0 /* hello.gif */,
 				29D311802999212E00F57CB0 /* Info.plist */,
 			);
 			path = OnlineShop;
@@ -158,7 +167,6 @@
 		29D31193299ABA6F00F57CB0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				29D31194299ABA9100F57CB0 /* GifExtension.swift */,
 				29D31199299ABBDD00F57CB0 /* TextFieldExtention.swift */,
 			);
 			path = Extensions;
@@ -223,7 +231,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				29D3117C2999212E00F57CB0 /* Assets.xcassets in Resources */,
-				29D31197299ABAC100F57CB0 /* hello.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,8 +241,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29110CC8299E33F40067B0B0 /* CatalogPresenter.swift in Sources */,
 				29509876299D2FB000D28867 /* DetailViewController.swift in Sources */,
-				29D31195299ABA9100F57CB0 /* GifExtension.swift in Sources */,
 				29509872299D28C100D28867 /* CatalogViewController.swift in Sources */,
 				29D3118F299A3C9400F57CB0 /* LoginViewController.swift in Sources */,
 				29509874299D28FA00D28867 /* MainTabBarCoordinator.swift in Sources */,
@@ -243,6 +250,7 @@
 				2950986F299D262100D28867 /* ProfileViewController.swift in Sources */,
 				29D31187299921A200F57CB0 /* AppCoordinator.swift in Sources */,
 				29D31192299A403100F57CB0 /* LoginPresenter.swift in Sources */,
+				2963574E299E0D7C00850AD7 /* Product.swift in Sources */,
 				29D311732999212D00F57CB0 /* AppDelegate.swift in Sources */,
 				29D3119A299ABBDD00F57CB0 /* TextFieldExtention.swift in Sources */,
 				29D311752999212D00F57CB0 /* SceneDelegate.swift in Sources */,

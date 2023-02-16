@@ -18,19 +18,22 @@ class MockAuthorizationService: AuthorizationService {
     }
     
     func signIn(login: String, password: String) async throws {
+        try? await Task.sleep(for: .seconds(1))
         guard login == "Admin" else {
-            _isAuthorized.value = false
-            throw AuthorizationError.wrongLogin
+//             _isAuthorized.value = false
+            throw AuthorizationError.wrongLoginOrPassword
         }
         guard password == "Qwerty" else {
-            _isAuthorized.value = false
-            throw AuthorizationError.wrongPassword
+            // _isAuthorized.value = false
+            throw AuthorizationError.wrongLoginOrPassword
         }
         
         _isAuthorized.value = true
     }
     
-    func signOut() {}
+    func signOut() {
+        _isAuthorized.value = false
+    }
 }
     
 

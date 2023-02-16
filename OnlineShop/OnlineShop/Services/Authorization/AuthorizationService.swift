@@ -9,8 +9,8 @@ import Foundation
 import Combine
 
 enum AuthorizationError: Error {
-    case wrongLogin
-    case wrongPassword
+    case wrongLoginOrPassword
+    
 }
 
 protocol AuthorizationService {

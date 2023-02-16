@@ -18,10 +18,10 @@ class LoginPresenter {
         Task {
             do {
                 try await authorizationService.signIn(login: login, password: password)
-                view?.hideLoader()
+                 view?.hideLoader()
             } catch {
-                view?.show(error: error)
-                view?.hideLoader()
+                self.view?.show(error: error)
+                self.view?.hideLoader()
             }
         }
     }

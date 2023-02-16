@@ -22,12 +22,16 @@ class MainTabBarCoordinator {
     
     private func shopping() -> UIViewController {
         let controller = CatalogViewController()
+        let presenter = CatalogPresenter()
+        let navController = UINavigationController(rootViewController: controller)
+        controller.presenter = presenter
+        presenter.view = controller
         controller.tabBarItem = .init(
             title: "Catalog",
             image: .init(systemName: "cart"),
             selectedImage: .init(systemName: "cart.fill")
         )
-        return controller
+        return navController
     }
     
     private func profile() -> UIViewController {

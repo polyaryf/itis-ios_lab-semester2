@@ -8,7 +8,12 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    private var activityIndicatorView: UIActivityIndicatorView = .init()
+    private var activityIndicatorView: UIActivityIndicatorView = {
+        var activityIndicator = UIActivityIndicatorView(style: .medium)
+        activityIndicator.color = .black
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        return activityIndicator
+    }()
     private var loginTextField: UITextField = {
         var textField: UITextField = .init()
         textField.translatesAutoresizingMaskIntoConstraints = false
@@ -44,7 +49,6 @@ class LoginViewController: UIViewController {
     
     var presenter: LoginPresenter?
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -91,34 +95,24 @@ class LoginViewController: UIViewController {
         
         view.addSubview(stackView)
         view.addSubview(loginButton)
+        view.addSubview(activityIndicatorView)
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
+            activityIndicatorView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            activityIndicatorView.topAnchor.constraint(equalTo: view.topAnchor),
+            activityIndicatorView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            activityIndicatorView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
             stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 200),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+            
             loginTextField.heightAnchor.constraint(equalToConstant: 30),
             passwordTextField.heightAnchor.constraint(equalToConstant: 30),
             loginButton.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 30),
             loginButton.leadingAnchor.constraint(equalTo: stackView.leadingAnchor),
             loginButton.trailingAnchor.constraint(equalTo: stackView.trailingAnchor)
-        ])
-        
-        greatingGifSetup()
-    }
-    
-    func greatingGifSetup() {
-        guard let confettiImageView = UIImageView.fromGif(frame: view.frame, resourceName: "hello") else { return }
-        view.addSubview(confettiImageView)
-        confettiImageView.animationDuration = 7
-        confettiImageView.startAnimating()
-
-        confettiImageView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            confettiImageView.leadingAnchor.constraint(equalTo: loginButton.leadingAnchor),
-            confettiImageView.trailingAnchor.constraint(equalTo: loginButton.trailingAnchor),
-            confettiImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            confettiImageView.topAnchor.constraint(equalTo: loginButton.bottomAnchor),
         ])
     }
 }

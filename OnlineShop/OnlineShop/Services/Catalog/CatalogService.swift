@@ -7,6 +7,7 @@
 
 import Foundation
 
-class CatalogService {
-    
+protocol CatalogService {
+    func getAll() -> [Product]
+    func add(product: Product)
 }
