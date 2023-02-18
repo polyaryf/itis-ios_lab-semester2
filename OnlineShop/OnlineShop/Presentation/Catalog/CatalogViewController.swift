@@ -16,9 +16,8 @@ class CatalogViewController: UIViewController {
         return layout
     }()
     
-    private var service: CatalogService = MockCatalogService.shared
     var presenter: CatalogPresenter?
-    private var list: [Product] = []
+    var list: [Product] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +27,8 @@ class CatalogViewController: UIViewController {
     }
     
     private func setup() {
-        list = service.getAll()
+        guard let presenter else { return }
+        presenter.showProducts()
         
         let collectionView: UICollectionView = .init(
             frame: .zero,
@@ -38,7 +38,7 @@ class CatalogViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-
+        
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             collectionView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -73,11 +73,10 @@ extension CatalogViewController: UICollectionViewDataSource, UICollectionViewDel
         let spacing: CGFloat = flowLayout.minimumInteritemSpacing
         let availableWidth = width - spacing * (numberOfItemsPerRow + 1)
         let itemDimension = floor(availableWidth / numberOfItemsPerRow)
-        return CGSize(width: itemDimension, height: itemDimension)
+        return CGSize(width: itemDimension, height: itemDimension * 0.7)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let presenter else { return }
-        presenter.showDetails(for: list[indexPath.item])
+        ShoppingFlowCoordinator.shared.showDetail(for: list[indexPath.item])
     }
 }

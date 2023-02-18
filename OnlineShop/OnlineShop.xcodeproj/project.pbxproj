@@ -15,6 +15,7 @@
 		2950987A299D2FFA00D28867 /* CatalogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29509879299D2FFA00D28867 /* CatalogService.swift */; };
 		2950987C299D301C00D28867 /* MockCatalogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950987B299D301C00D28867 /* MockCatalogService.swift */; };
 		2963574E299E0D7C00850AD7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2963574D299E0D7C00850AD7 /* Product.swift */; };
+		29B8807429A00584001293F6 /* ShoppingFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8807329A00584001293F6 /* ShoppingFlowCoordinator.swift */; };
 		29D311732999212D00F57CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D311722999212D00F57CB0 /* AppDelegate.swift */; };
 		29D311752999212D00F57CB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D311742999212D00F57CB0 /* SceneDelegate.swift */; };
 		29D3117C2999212E00F57CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D3117B2999212E00F57CB0 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		29509879299D2FFA00D28867 /* CatalogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogService.swift; sourceTree = "<group>"; };
 		2950987B299D301C00D28867 /* MockCatalogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCatalogService.swift; sourceTree = "<group>"; };
 		2963574D299E0D7C00850AD7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		29B8807329A00584001293F6 /* ShoppingFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingFlowCoordinator.swift; sourceTree = "<group>"; };
 		29D3116F2999212D00F57CB0 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D311722999212D00F57CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29D311742999212D00F57CB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				29D31190299A402000F57CB0 /* Login */,
 				29D31186299921A200F57CB0 /* AppCoordinator.swift */,
 				29509873299D28FA00D28867 /* MainTabBarCoordinator.swift */,
+				29B8807329A00584001293F6 /* ShoppingFlowCoordinator.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				29D31187299921A200F57CB0 /* AppCoordinator.swift in Sources */,
 				29D31192299A403100F57CB0 /* LoginPresenter.swift in Sources */,
 				2963574E299E0D7C00850AD7 /* Product.swift in Sources */,
+				29B8807429A00584001293F6 /* ShoppingFlowCoordinator.swift in Sources */,
 				29D311732999212D00F57CB0 /* AppDelegate.swift in Sources */,
 				29D3119A299ABBDD00F57CB0 /* TextFieldExtention.swift in Sources */,
 				29D311752999212D00F57CB0 /* SceneDelegate.swift in Sources */,

@@ -12,9 +12,7 @@ class CatalogPresenter {
     
     weak var view: CatalogViewController?
     
-    func showDetails(for product: Product) {
-        let detailVC = DetailViewController()
-        detailVC.set(name: product.name, price: product.price)
-        self.view?.navigationController?.show(detailVC, sender: .none)
+    func showProducts() {
+        view?.list = catalogService.getAll()
     }
 }
