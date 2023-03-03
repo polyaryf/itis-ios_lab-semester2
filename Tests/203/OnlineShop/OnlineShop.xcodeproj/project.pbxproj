@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29920CC329B1CED7008CB073 /* AuthorizationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29920CC229B1CED7008CB073 /* AuthorizationServiceTests.swift */; };
 		AE01A04A29AA287C003DCB69 /* MockLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE01A04929AA287C003DCB69 /* MockLoginView.swift */; };
 		AE01A05229AA2DBE003DCB69 /* OnlineShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE01A05129AA2DBE003DCB69 /* OnlineShopUITests.swift */; };
 		AE62A6D02997C44A00276B3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE62A6CF2997C44A00276B3A /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29920CC229B1CED7008CB073 /* AuthorizationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationServiceTests.swift; sourceTree = "<group>"; };
 		AE01A04929AA287C003DCB69 /* MockLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginView.swift; sourceTree = "<group>"; };
 		AE01A04F29AA2DBE003DCB69 /* OnlineShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE01A05129AA2DBE003DCB69 /* OnlineShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopUITests.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 			children = (
 				AE01A04829AA2873003DCB69 /* Mocks */,
 				AEF88E7729AA25CB0076F3DA /* LoginPresenterTests.swift */,
+				29920CC229B1CED7008CB073 /* AuthorizationServiceTests.swift */,
 			);
 			path = OnlineShopTests;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 			files = (
 				AE01A04A29AA287C003DCB69 /* MockLoginView.swift in Sources */,
 				AEF88E7829AA25CB0076F3DA /* LoginPresenterTests.swift in Sources */,
+				29920CC329B1CED7008CB073 /* AuthorizationServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

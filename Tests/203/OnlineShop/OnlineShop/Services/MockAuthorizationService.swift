@@ -40,4 +40,8 @@ class MockAuthorizationService: AuthorizationService {
     func signOut() {
         _isAuthorized.value = false
     }
+    
+    func getIsAuthorizedValue() -> Bool {
+        return _isAuthorized.value
+    }
 }
