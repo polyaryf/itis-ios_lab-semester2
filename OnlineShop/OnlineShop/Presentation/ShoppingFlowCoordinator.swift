@@ -10,21 +10,25 @@ import UIKit
 class ShoppingFlowCoordinator {
     static let shared: ShoppingFlowCoordinator = ShoppingFlowCoordinator()
    
-    var navController: UINavigationController?
+    private weak var navController: UINavigationController?
 
     func start() -> UIViewController {
         let catalogViewController = CatalogViewController()
         let presenter = CatalogPresenter()
+        presenter.showDetails = showDetail
         catalogViewController.presenter = presenter
         presenter.view = catalogViewController
         
-        navController = UINavigationController(rootViewController: catalogViewController)
-        return navController!
+        let navController = UINavigationController(rootViewController: catalogViewController)
+        self.navController = navController
+        return navController
     }
     
     func showDetail(for product: Product) {
         let detailViewConroller = DetailViewController()
-        detailViewConroller.set(name: product.name, price: product.price)
+        let detailPresenter = DetailPresenter()
+        detailPresenter.view = detailViewConroller
+        detailPresenter.showProduct(product: product)
         navController?.show(detailViewConroller, sender: .none)
     }
 }

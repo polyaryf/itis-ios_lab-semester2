@@ -16,6 +16,7 @@
 		2950987C299D301C00D28867 /* MockCatalogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950987B299D301C00D28867 /* MockCatalogService.swift */; };
 		2963574E299E0D7C00850AD7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2963574D299E0D7C00850AD7 /* Product.swift */; };
 		29B8807429A00584001293F6 /* ShoppingFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8807329A00584001293F6 /* ShoppingFlowCoordinator.swift */; };
+		29B8807629A0E6DA001293F6 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8807529A0E6DA001293F6 /* DetailPresenter.swift */; };
 		29D311732999212D00F57CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D311722999212D00F57CB0 /* AppDelegate.swift */; };
 		29D311752999212D00F57CB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D311742999212D00F57CB0 /* SceneDelegate.swift */; };
 		29D3117C2999212E00F57CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D3117B2999212E00F57CB0 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		2950987B299D301C00D28867 /* MockCatalogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCatalogService.swift; sourceTree = "<group>"; };
 		2963574D299E0D7C00850AD7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		29B8807329A00584001293F6 /* ShoppingFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingFlowCoordinator.swift; sourceTree = "<group>"; };
+		29B8807529A0E6DA001293F6 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		29D3116F2999212D00F57CB0 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D311722999212D00F57CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29D311742999212D00F57CB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,8 +75,9 @@
 			isa = PBXGroup;
 			children = (
 				29509871299D28C100D28867 /* CatalogViewController.swift */,
-				29509875299D2FB000D28867 /* DetailViewController.swift */,
 				29110CC7299E33F40067B0B0 /* CatalogPresenter.swift */,
+				29509875299D2FB000D28867 /* DetailViewController.swift */,
+				29B8807529A0E6DA001293F6 /* DetailPresenter.swift */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				29D31192299A403100F57CB0 /* LoginPresenter.swift in Sources */,
 				2963574E299E0D7C00850AD7 /* Product.swift in Sources */,
 				29B8807429A00584001293F6 /* ShoppingFlowCoordinator.swift in Sources */,
+				29B8807629A0E6DA001293F6 /* DetailPresenter.swift in Sources */,
 				29D311732999212D00F57CB0 /* AppDelegate.swift in Sources */,
 				29D3119A299ABBDD00F57CB0 /* TextFieldExtention.swift in Sources */,
 				29D311752999212D00F57CB0 /* SceneDelegate.swift in Sources */,
