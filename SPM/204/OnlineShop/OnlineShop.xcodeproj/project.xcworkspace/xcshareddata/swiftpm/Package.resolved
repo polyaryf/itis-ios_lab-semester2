@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "macaroni",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bealex/Macaroni.git",
+      "state" : {
+        "revision" : "916216053de3490ca13ca502e43e99b34d024c4f",
+        "version" : "4.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}

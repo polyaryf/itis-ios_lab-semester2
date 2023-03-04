@@ -77,6 +77,6 @@ extension CatalogViewController: UICollectionViewDataSource, UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter.showDetails(for: list[indexPath.item])
+        presenter?.showDetails(for: list[indexPath.item])
     }
 }
