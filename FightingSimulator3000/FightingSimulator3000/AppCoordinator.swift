@@ -6,12 +6,22 @@
 //
 
 import UIKit
+import FightingServices
+import FightingServicesImplementation
+import PlayerServicesImplementation
 
 class AppCoordinator {
     weak var window: UIWindow?
-    static let shared: AppCoordinator = .init()
+    public var fightService: FightService
+
+    init(window: UIWindow? = nil, fightService: FightService) {
+        self.window = window
+        self.fightService = fightService
+    }
     
-    var fightService: FightService = FightServiceImplementation.shared
+    public static let shared: AppCoordinator = AppCoordinator(
+        fightService: FightServiceImplementation (playerService: PlayerServiceImplementation())
+    )
     
     func start() {
         fightService.startFight()

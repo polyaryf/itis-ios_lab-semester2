@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FightingServicesImplementation
+import PlayerServicesImplementation
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
