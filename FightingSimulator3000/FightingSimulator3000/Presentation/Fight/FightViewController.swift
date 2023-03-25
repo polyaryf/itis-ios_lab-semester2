@@ -114,6 +114,6 @@ class FightViewController: UIViewController {
     
     @objc
     private func magicAttackTap() {
-        presenter?.showHealthPointsAfterBasicAttack()
+        presenter?.showHealthPointsAfterMagicAttack()
     }
 }
