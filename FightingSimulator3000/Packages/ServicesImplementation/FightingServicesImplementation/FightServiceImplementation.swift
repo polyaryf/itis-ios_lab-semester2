@@ -8,7 +8,6 @@ import Combine
 import FightingServices
 import PlayerServices
 
-
 public class FightServiceImplementation: FightService {
     public let playerService: PlayerService
     

@@ -19,6 +19,8 @@
 		295097F429BDB168008166F7 /* GifExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295097F329BDB168008166F7 /* GifExtention.swift */; };
 		295097F729BDB18F008166F7 /* leftFighter.gif in Resources */ = {isa = PBXBuildFile; fileRef = 295097F529BDB18E008166F7 /* leftFighter.gif */; };
 		295097F829BDB18F008166F7 /* rightFighter.gif in Resources */ = {isa = PBXBuildFile; fileRef = 295097F629BDB18F008166F7 /* rightFighter.gif */; };
+		2997006329CED1F400CD0E64 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997006229CED1F400CD0E64 /* ServiceLocator.swift */; };
+		2997006529CED23700CD0E64 /* AppConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997006429CED23700CD0E64 /* AppConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		295097F329BDB168008166F7 /* GifExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifExtention.swift; sourceTree = "<group>"; };
 		295097F529BDB18E008166F7 /* leftFighter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leftFighter.gif; sourceTree = "<group>"; };
 		295097F629BDB18F008166F7 /* rightFighter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rightFighter.gif; sourceTree = "<group>"; };
+		2997006229CED1F400CD0E64 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		2997006429CED23700CD0E64 /* AppConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +90,11 @@
 		295097D029BD9AEF008166F7 /* FightingSimulator3000 */ = {
 			isa = PBXGroup;
 			children = (
+				2997006129CED1C300CD0E64 /* Dependencies */,
+				2997006029CED0E600CD0E64 /* App */,
+				2997005F29CED0D400CD0E64 /* Coordinator */,
 				295097F229BDB153008166F7 /* Extention */,
 				295097E529BD9B49008166F7 /* Presentation */,
-				295097E729BD9B83008166F7 /* AppCoordinator.swift */,
-				295097D129BD9AEF008166F7 /* AppDelegate.swift */,
-				295097D329BD9AEF008166F7 /* SceneDelegate.swift */,
 				295097DA29BD9AF0008166F7 /* Assets.xcassets */,
 				295097F529BDB18E008166F7 /* leftFighter.gif */,
 				295097F629BDB18F008166F7 /* rightFighter.gif */,
@@ -124,6 +128,32 @@
 				295097F329BDB168008166F7 /* GifExtention.swift */,
 			);
 			path = Extention;
+			sourceTree = "<group>";
+		};
+		2997005F29CED0D400CD0E64 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				295097E729BD9B83008166F7 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2997006029CED0E600CD0E64 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				295097D329BD9AEF008166F7 /* SceneDelegate.swift */,
+				295097D129BD9AEF008166F7 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2997006129CED1C300CD0E64 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				2997006229CED1F400CD0E64 /* ServiceLocator.swift */,
+				2997006429CED23700CD0E64 /* AppConfigurator.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,8 +235,10 @@
 				295097EA29BD9BAE008166F7 /* FightViewController.swift in Sources */,
 				295097EF29BD9BEE008166F7 /* FightPresenter.swift in Sources */,
 				295097E829BD9B83008166F7 /* AppCoordinator.swift in Sources */,
+				2997006329CED1F400CD0E64 /* ServiceLocator.swift in Sources */,
 				295097D229BD9AEF008166F7 /* AppDelegate.swift in Sources */,
 				295097D429BD9AEF008166F7 /* SceneDelegate.swift in Sources */,
+				2997006529CED23700CD0E64 /* AppConfigurator.swift in Sources */,
 				295097EC29BD9BC5008166F7 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
