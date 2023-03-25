@@ -54,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2917B0CD29CEDE3700F439CE /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				2997006429CED23700CD0E64 /* AppConfigurator.swift */,
+				2997006229CED1F400CD0E64 /* ServiceLocator.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
 		2947894629C8C1F80082D0C0 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +99,7 @@
 		295097D029BD9AEF008166F7 /* FightingSimulator3000 */ = {
 			isa = PBXGroup;
 			children = (
-				2997006129CED1C300CD0E64 /* Dependencies */,
+				2917B0CD29CEDE3700F439CE /* Dependencies */,
 				2997006029CED0E600CD0E64 /* App */,
 				2997005F29CED0D400CD0E64 /* Coordinator */,
 				295097F229BDB153008166F7 /* Extention */,
@@ -145,15 +154,6 @@
 				295097D129BD9AEF008166F7 /* AppDelegate.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		2997006129CED1C300CD0E64 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				2997006229CED1F400CD0E64 /* ServiceLocator.swift */,
-				2997006429CED23700CD0E64 /* AppConfigurator.swift */,
-			);
-			path = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
