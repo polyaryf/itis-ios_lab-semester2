@@ -22,10 +22,16 @@ let package = Package(
     targets: [
         .target(
             name: "FightingServicesImplementation",
+            dependencies: [
+                .product(name: "FightingServices", package: "Services"),
+            ],
             path: "FightingServicesImplementation"
         ),
         .target(
             name: "PlayerServicesImplementation",
+            dependencies: [
+                .product(name: "PlayerServices", package: "Services"),
+            ],
             path: "PlayerServicesImplementation"
         ),
         

@@ -21,14 +21,14 @@ let package = Package(
         .target(
             name: "ProjectDependencies",
             dependencies: [
-                .product(
-                    name: "FightingServices",
-                    package: "Services"
-                ),
-                .product(
-                    name: "PlayerServices",
-                    package: "Services"
-                ),
+//                .product(
+//                    name: "FightingServices",
+//                    package: "Services"
+//                ),
+//                .product(
+//                    name: "PlayerServices",
+//                    package: "Services"
+//                ),
                 .product(
                     name: "FightingServicesImplementation",
                     package: "ServicesImplementation"
